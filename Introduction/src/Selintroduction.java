@@ -15,6 +15,10 @@ public class Selintroduction {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.freelancer.com/");
 		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getPageSource());
+		//driver.close();
+		//driver.quit();
 	
 
 	}

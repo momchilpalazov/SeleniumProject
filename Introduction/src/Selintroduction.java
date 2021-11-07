@@ -13,6 +13,8 @@ public class Selintroduction {
 		
 		//webdriver.chrome.driver->value path(key)
 		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.freelancer.com/");
+		System.out.println(driver.getTitle());
 	
 
 	}

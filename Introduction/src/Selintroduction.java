@@ -9,7 +9,7 @@ public class Selintroduction {
 		//Invoking Browser
 		
 		//chromedriver.exe->Chrome Browser
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Palazov\\Desktop\\All Doks\\QA Testing Selenium\\chromedriver_win32.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Chromedriver\\chromedriver.exe");
 		
 		//webdriver.chrome.driver->value path(key)
 		WebDriver driver = new ChromeDriver();

@@ -30,8 +30,9 @@ public class Selintroduction {
 		driver.findElement(By.name("commit")).click();
 		
 		
-		//class name and css Selector locators to identify elements		
-		//System.out.println(driver.findElement(By.className("Dismiss this message")).getText());
+		//class name and css Selector locators to identify elements	
+		//print error in console with xpath
+		System.out.println(driver.findElement(By.xpath("/html[1]/body[1]/div[3]/main[1]/div[1]/div[2]/div[1]/div[1]")).getText());
 		
 		
 		//Find with LinkText and Xpath
@@ -40,6 +41,7 @@ public class Selintroduction {
 		// //input[@placeholder='Enter your email address']
 		
 		driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("momchil.palazov@gmail.com");
+		//driver.findElement(By.cssSelector("input [placeholder='Enter your email address']")).clear();
 		
 		
 		//System.out.println(driver.getTitle());

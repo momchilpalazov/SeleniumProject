@@ -41,7 +41,9 @@ public class Selintroduction {
 		// //input[@placeholder='Enter your email address']
 		
 		driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys("momchil.palazov@gmail.com");
-		//driver.findElement(By.cssSelector("input [placeholder='Enter your email address']")).clear();
+		
+		//clear method
+		driver.findElement(By.xpath("(//input[@id='email_field'])[1]")).clear();
 		
 		
 		//System.out.println(driver.getTitle());

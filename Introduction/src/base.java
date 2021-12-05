@@ -10,14 +10,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class base {
 
 	@SuppressWarnings("unchecked")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		Thread.sleep(3000);
 
-		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot" };
+		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot","Tomato" };
 		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 		int j=0;
 
@@ -34,9 +35,9 @@ public class base {
 				
 				j++;
 				//click on Add
-				driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
+				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 				
-				if (j==3) {
+				if (j==itemsNeeded.length) {
 					break;
 				}
 

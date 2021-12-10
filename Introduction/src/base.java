@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +13,41 @@ public class base {
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+		
+		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot","Tomato" };
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		//implecit wait
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		Thread.sleep(3000);
+		
+		
+		
+		addItemsMethod(driver, itemsNeeded);
+		//base b=new base();
+		//b.addItemsMethod(driver, itemsNeeded);
+		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.className("promoCode")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.xpath("//button[normalize-space()='Apply']")).click();
+		
+		//explecit wait
+		
+		System.out.println( driver.findElement(By.cssSelector(".promoInfo")).getText());
+		
+	}
 
-		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot","Tomato" };
+	
+	
+	public static void addItemsMethod(WebDriver driver,String [] itemsNeeded)
+	
+	{
+		
+		
 		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 		int j=0;
 
@@ -48,3 +77,7 @@ public class base {
 	}
 
 }
+	
+	
+
+

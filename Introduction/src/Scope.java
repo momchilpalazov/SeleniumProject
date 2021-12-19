@@ -20,6 +20,13 @@ public class Scope {
 		 WebElement footerwebelement=driver.findElement(By.cssSelector("#gf-BIG"));
 		 
 		 System.out.println( footerwebelement.findElements(By.tagName("a")).size());
+		 
+		 //3.Find coloumn size
+		 
+		WebElement coloumndriver= footerwebelement.findElement(By.xpath("//body[1]/div[6]/table[1]/tbody[1]/tr[1]/td[1]"));
+		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
+		
+		
 
 	}
 

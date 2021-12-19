@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Scope {
@@ -13,6 +14,12 @@ public class Scope {
 		//Give me the count of links on the page
 		
 		 System.out.println( driver.findElements(By.tagName("a")).size());
+		 
+		 //Give me the count of links on the footer page
+		 
+		 WebElement footerwebelement=driver.findElement(By.cssSelector("#gf-BIG"));
+		 
+		 System.out.println( footerwebelement.findElements(By.tagName("a")).size());
 
 	}
 

@@ -16,6 +16,14 @@ public class calendarTest {
 		
 		driver.findElement(By.id("ez-accept-all")).click();
 		driver.findElement(By.xpath("//input[@id='travel_date']")).click();
+	    //driver.findElement(By.className("datepicker-switch")).getText().contains("January 2022");
+		
+		while (!driver.findElement(By.cssSelector("table[class=' table-condensed'] th[class='datepicker-switch']")).getText().contains("January 2022"))
+		{
+			driver.findElement(By.cssSelector("table[class=' table-condensed'] th[class='next']")).click();
+		}
+		
+		
 		
 		List<WebElement> day=driver.findElements(By.className("day"));
 		int count=driver.findElements(By.className("day")).size();

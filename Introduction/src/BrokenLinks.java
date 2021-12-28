@@ -22,7 +22,8 @@ public class BrokenLinks {
 		//broken URL
 		//Step 1-Is to get all urls tied up the links using selenium
 		
-		String url=driver.findElement(By.cssSelector("a[href='https://www.soapui.org/']")).getAttribute("href");
+		//String url=driver.findElement(By.cssSelector("a[href='https://www.soapui.org/']")).getAttribute("href");
+		String url=driver.findElement(By.cssSelector("a[href='https://rahulshettyacademy.com/brokenlink']")).getAttribute("href");
 		
 		//Java methods will URL's and gets you the status code
 		 URLConnection conn= (HttpURLConnection)new URL(url).openConnection();

@@ -10,6 +10,7 @@ public class JavaScriptExecuter {
 		System.setProperty("webdriver.chrome.driver", "C:\\Chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		

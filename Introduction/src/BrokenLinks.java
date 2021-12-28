@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class BrokenLinks {
 
@@ -25,6 +26,8 @@ public class BrokenLinks {
 		
 		List<WebElement> testLink=  driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 		
+		SoftAssert a=new SoftAssert();
+		
 		for (WebElement testLinks: testLink) {
 			
 			String url=testLinks.getAttribute("href");
@@ -35,14 +38,17 @@ public class BrokenLinks {
 			 conn.connect();
 			 int respCode=((HttpURLConnection) conn).getResponseCode();
 			 System.out.println(respCode);
+			 a.assertTrue(respCode<400, "The link With Text " + testLinks.getText() + "is broken with code" + respCode);
 			 
-			 if (respCode>400) {
+			// if (respCode>400) {
 				
-				 System.out.println("The link With Text " + testLinks.getText() + "is broken with code" + respCode);
-				 Assert.assertTrue(false);
-			}
+				 //System.out.println("The link With Text " + testLinks.getText() + "is broken with code" + respCode);
+				// Assert.assertTrue(false);
+			//}
 			 
 		}
+		
+		a.assertAll();
 		
 		//broken URL
 		//Step 1-Is to get all urls tied up the links using selenium

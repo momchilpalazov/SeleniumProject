@@ -35,10 +35,17 @@ public class StreamDemo {
 		  
 		  
 		  //scan the name column with get text->Beans-> print the price of the Rice
-		  
-		 List<String> price= elementList.stream().filter(s->s.getText().contains("Beans")).
+		  List<String> price;
+		  do {
+			  List<WebElement> nextElementList= driver.findElements(By.xpath("//tr/td[1]"));
+		  price= nextElementList.stream().filter(s->s.getText().contains("Rice")).
 		  map(s->getPriceVeggie(s)).collect(Collectors.toList());
 		 price.forEach(p->System.out.println(p));
+		 
+		 if (price.size()<1) {
+			driver.findElement(By.xpath("//a[@aria-label='Next']")).click();
+		}
+		  }while(price.size()<1);
 		
 
 	}

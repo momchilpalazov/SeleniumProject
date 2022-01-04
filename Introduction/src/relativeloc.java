@@ -17,6 +17,15 @@ public class relativeloc {
 		
 		WebElement name=	driver.findElement(By.cssSelector("[name='name']"));
 	    System.out.println( driver.findElement(with(By.tagName("label")).above(name)).getText());
+	    
+	   WebElement dateName= driver.findElement(By.cssSelector("[for='dateofBirth']"));
+	   driver.findElement(with(By.tagName("input")).below(dateName)).click();
+	   
+	 WebElement iceCream=  driver.findElement(By.xpath("//label[normalize-space()='Check me out if you Love IceCreams!']"));
+	 driver.findElement(with(By.tagName("input")).toLeftOf(iceCream)).click();
+	 
+	   WebElement statusElement= driver.findElement(By.id("inlineRadio1"));
+	   System.out.println( driver.findElement(with(By.tagName("label")).toRightOf(statusElement)).getText());
 
 	}
 

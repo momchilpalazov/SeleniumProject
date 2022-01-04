@@ -34,12 +34,16 @@ public class NewWindow {
 		WebElement name=driver.findElement(By.cssSelector("[name='name']"));
 		name.sendKeys(courseName);
 		
-		//screenschot
+		//screenshot
 		File file=name.getScreenshotAs(OutputType.FILE);
 		
 		FileUtils.copyFile(file,new File("logo.png"));
 		
 		//driver.quit();
+		
+		//Get Heigh and Width
+		 System.out.println( name.getRect().getDimension().getHeight());
+		 System.out.println(name.getRect().getDimension().getWidth());
 
 	}
 

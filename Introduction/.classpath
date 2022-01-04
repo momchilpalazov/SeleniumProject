@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="C:/Users/Palazov/Downloads/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Palazov/Downloads/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Palazov/Downloads/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Palazov/Downloads/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

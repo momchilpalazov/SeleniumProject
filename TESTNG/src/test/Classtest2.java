@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Classtest2 {
@@ -11,11 +12,11 @@ public class Classtest2 {
 		
 	}
 	
-	@Test
+	@BeforeTest
 	public void MobileLiginCarLoan()
 	{
 		//Appium
-		System.out.println("MobileLogin4");
+		System.out.println("I am execute firts!");
 		//hi
 	}
 	

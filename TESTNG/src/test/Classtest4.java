@@ -12,7 +12,7 @@ public class Classtest4 {
 		
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void MobileLiginCarLoan()
 	{
 		//Appium

@@ -48,12 +48,15 @@ public class Classtest3 {
 		System.out.println("i will execute before every test method in classtest3");
 		//hi
 	}
+	
+	@Test
 	public void MobileLigin()
 	{
 		//Appium
 		System.out.println("MobileLoginnew");
 		//hi
 	}
+	@Test(enabled=false)
 	public void Mobiledata()
 	{
 		//Appium
@@ -77,11 +80,18 @@ public class Classtest3 {
 		//hi
 	}
 	
-	@Test
+	@Test(timeOut=4000)
 	public void LoginAPIcarLoan()
 	{
 		//RestAPI automation
-		System.out.println("RestApi4");
+		System.out.println("Error");
+	}
+	
+	@Test(dependsOnMethods= {"MobileLigin","LoginAPIcarLoan"})
+	public void APIcarLoan()
+	{
+		//RestAPI automation
+		System.out.println("Depends");
 	}
 
 

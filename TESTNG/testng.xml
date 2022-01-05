@@ -16,7 +16,8 @@
 	<classes>
 		<class name="test.Classtest3">
 			<methods>
-				<exclude name="MobileLiginCarLoan"/>
+				<exclude name="Mobile.*"/>
+		
 			</methods>
 
 		</class> 

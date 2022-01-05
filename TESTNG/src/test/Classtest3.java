@@ -16,7 +16,19 @@ public class Classtest3 {
 	public void MobileLiginCarLoan()
 	{
 		//Appium
-		System.out.println("MobileLogin4");
+		System.out.println("MobileLogin3");
+		//hi
+	}
+	public void MobileLigin()
+	{
+		//Appium
+		System.out.println("MobileLoginnew");
+		//hi
+	}
+	public void Mobiledata()
+	{
+		//Appium
+		System.out.println("Mobiledata");
 		//hi
 	}
 	

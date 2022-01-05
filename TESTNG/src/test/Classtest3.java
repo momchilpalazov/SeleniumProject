@@ -1,5 +1,8 @@
 package test;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Classtest3 {
@@ -19,6 +22,14 @@ public class Classtest3 {
 		System.out.println("MobileLogin3");
 		//hi
 	}
+	
+	@BeforeMethod
+	public void beforemethod()
+	{
+		//Appium
+		System.out.println("i will execute before every test method in classtest3");
+		//hi
+	}
 	public void MobileLigin()
 	{
 		//Appium
@@ -29,6 +40,22 @@ public class Classtest3 {
 	{
 		//Appium
 		System.out.println("Mobiledata");
+		//hi
+	}
+	
+	@AfterMethod
+	public void aftermethod()
+	{
+		//Appium
+		System.out.println("i will execute after every test method in classtest3");
+		//hi
+	}
+	
+	@BeforeSuite
+	public void aftersuties()
+	{
+		//Appium
+		System.out.println("i am no 1");
 		//hi
 	}
 	

@@ -1,20 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-05T15:28:00 CET" name="Suite" finished-at="2022-01-05T15:28:00 CET" duration-ms="80">
+  <suite started-at="2022-01-05T15:48:31 CET" name="Default suite" finished-at="2022-01-05T15:48:31 CET" duration-ms="115">
     <groups>
-      <group name="Smoke">
-        <method signature="Classtest4.MobileLiginCarLoan()[pri:0, instance:test.Classtest4@57af006c]" name="MobileLiginCarLoan" class="test.Classtest4"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-01-05T15:28:00 CET" name="Regression" finished-at="2022-01-05T15:28:00 CET" duration-ms="80">
-      <class name="test.Classtest4">
-        <test-method signature="MobileLiginCarLoan()[pri:0, instance:test.Classtest4@57af006c]" started-at="2022-01-05T15:28:00 CET" name="MobileLiginCarLoan" finished-at="2022-01-05T15:28:00 CET" duration-ms="15" status="PASS">
+    <test started-at="2022-01-05T15:48:31 CET" name="Default test" finished-at="2022-01-05T15:48:31 CET" duration-ms="115">
+      <class name="test.Classtest3">
+        <test-method is-config="true" signature="aftersuties()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftersuties" finished-at="2022-01-05T15:48:31 CET" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuties -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforeclass" finished-at="2022-01-05T15:48:31 CET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforemethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="LoginAPIcarLoan()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="LoginAPIcarLoan" finished-at="2022-01-05T15:48:31 CET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIcarLoan -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftermethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforemethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="MobileLigin()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="MobileLigin" finished-at="2022-01-05T15:48:31 CET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLigin -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftermethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method signature="MobileLiginCarLoan()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="MobileLiginCarLoan" finished-at="2022-01-05T15:48:31 CET" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileLiginCarLoan -->
-      </class> <!-- test.Classtest4 -->
-    </test> <!-- Regression -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforemethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftermethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforemethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="WebloginCarLoan()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="WebloginCarLoan" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebloginCarLoan -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftermethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="beforemethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="APIcarLoan()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="APIcarLoan" finished-at="2022-01-05T15:48:31 CET" depends-on-methods="test.Classtest3.MobileLigin, test.Classtest3.LoginAPIcarLoan" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIcarLoan -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="aftermethod" finished-at="2022-01-05T15:48:31 CET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:test.Classtest3@793be5ca]" started-at="2022-01-05T15:48:31 CET" name="afterclass" finished-at="2022-01-05T15:48:31 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- test.Classtest3 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

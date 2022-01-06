@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -10,6 +11,7 @@ public class Classtest1 {
 	public void Demo()
 	{
 		System.out.println("Hello World");
+		Assert.assertTrue(false);
 		
 	}
 	

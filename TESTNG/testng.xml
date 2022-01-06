@@ -6,6 +6,7 @@
 
   <test thread-count="5" name="test">
    <parameter name="URL" value="personalloan.com"/>
+<parameter name="APIKey/username" value="123456"/>
     <classes>
       <class name="test.Classtest1">
 			<methods>
@@ -19,6 +20,7 @@
   </test> <!-- Test -->
 <test name="Car Loan">
 <parameter name="URL" value="carloan.com"/>
+<parameter name="APIKey/username" value="123456"/>
 	<classes>
 		<class name="test.Classtest3">
 			<methods>

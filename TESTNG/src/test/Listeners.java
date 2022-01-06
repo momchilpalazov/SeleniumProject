@@ -29,7 +29,7 @@ public class Listeners implements ITestListener  {
 		//screen code
 		//response if API is failed
 		
-		System.out.println("Not succesfuly executed Listeners pass code");
+		System.out.println("Not succesfuly executed Listeners pass code"+ result.getName());
 	}
 
 	@Override

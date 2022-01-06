@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Classtest3 {
@@ -17,11 +18,13 @@ public class Classtest3 {
 		//hi
 	}
 	
+	@Parameters({"URL"})
 	@Test
-	public void WebloginCarLoan()
+	public void WebloginCarLoan(String urlname)
 	{
 		//selenium
 		System.out.println("WebLogin4");
+		System.out.println(urlname);
 		
 	}
 	
@@ -87,7 +90,7 @@ public class Classtest3 {
 		System.out.println("Error");
 	}
 	
-	@Test(dependsOnMethods= {"MobileLigin","LoginAPIcarLoan"})
+	//@Test(dependsOnMethods= {"MobileLigin","LoginAPIcarLoan"})
 	public void APIcarLoan()
 	{
 		//RestAPI automation

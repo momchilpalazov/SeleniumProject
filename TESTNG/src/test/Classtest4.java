@@ -1,15 +1,18 @@
 package test;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Classtest4 {
 	
+	
+	@Parameters({"URL"})
 	@Test
-	public void WebloginCarLoan()
+	public void WebloginCarLoan(String personalname)
 	{
 		//selenium
 		System.out.println("WebLogin4");
-		
+		System.out.println(personalname);
 	}
 	
 	@Test(groups= {"Smoke"})
